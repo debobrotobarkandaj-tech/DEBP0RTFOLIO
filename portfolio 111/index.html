@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debu's Futuristic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Day/Night Toggle -->
+    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+
+    <!-- Profile Photo (Top Left) -->
+    <div class="profile-container">
+        <img src="https://i.ibb.co/4nRBqp4v/Whats-App-Image-2026-05-03-at-8-16-38-AM.jpg" alt="Debu">
+    </div>
+
+    <!-- Main Content -->
+    <section class="hero">
+        <h1 class="glitch">Debobroto Barkandaj</h1>
+        <p>BCA Student | Cybersecurity & Web Developer</p>
+        <a href="resume.pdf" target="_blank" class="resume-btn">View Resume</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="skill-card" onclick="toggleSkill('app-dev')">
+            <h3>App Development</h3>
+            <div id="app-dev" class="skill-details">Backend, Frontend, Database, Fullstack</div>
+        </div>
+        <div class="skill-card" onclick="toggleSkill('web-dev')">
+            <h3>Web Development</h3>
+            <div id="web-dev" class="skill-details">HTML, CSS, JavaScript, Python</div>
+        </div>
+    </section>
+
+    <!-- Updated Draggable Chatbot -->
+    <div id="chatbot">
+        <div class="chat-header" id="chat-handle">🤖 Debu's Assistant    (Hold to move)</div>
+        <div id="chat-res" class="chat-body">Hi! I'm Debu's bot. Try saying 'Hi', 'Skills', or 'Contact'.</div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type message...">
+            <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <!-- Social Media Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1NHpPF8TYH/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ilysbp_ultimate_7?igsh=MTR5dGs5ZHVzMXI3dA==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/debobrotobarkandaj-tech" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/debobroto-barkandaj-5b5b043b1/?locale=en-US" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://youtube.com/@tecno_debu_ff?si=casTVt74t4O59iX3" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* ডিফল্ট ডার্ক মোড */
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #ffffff;
+    --glass: rgba(255, 255, 255, 0.1);
+    --primary: #00f2fe;
+}
+
+/* লাইট মোড যখন বডিতে এই ক্লাস যোগ হবে */
+.light-mode {
+    --bg-color: #f4f4f4;
+    --text-color: #1a1a1a;
+    --glass: rgba(0, 0, 0, 0.05);
+    --primary: #007bff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.4s, color 0.4s; /* স্মুথ ট্রানজিশন */
+}
+:root {
+    --bg: #0a0a0a;
+    --text: #ffffff;
+    --primary: #00f2fe;
+    --glass: rgba(255, 255, 255, 0.1);
+}
+
+.light-mode {
+    --bg: #f4f4f4;
+    --text: #1a1a1a;
+    --glass: rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+/* Profile Photo */
+.profile-container img {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--primary);
+    border-radius: 12px;
+    box-shadow: 0 0 15px var(--primary);
+    object-fit: cover;
+    z-index: 100;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.resume-btn {
+    padding: 10px 25px;
+    background: var(--primary);
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.skill-card {
+    background: var(--glass);
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    width: 200px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: var(--primary);
+}
+
+/* Chatbot Style */
+#chatbot {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 200px;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: move;
+}
+
+#chat-input {
+    width: 90%;
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--text);
+    margin-top: 5px;
+}
+
+/* Social Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: var(--glass);
+    text-align: center;
+}
+
+.social-icons a {
+    color: var(--text);
+    font-size: 24px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background: var(--primary);
+    border: none;
+    border-radius: 50%;
+}
